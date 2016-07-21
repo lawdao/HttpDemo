@@ -27,4 +27,5 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.4.0-RC1'
     compile 'com.google.code.gson:gson:2.7'
     compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/httpmime-4.2.5.jar')
 }
