@@ -47,6 +47,7 @@ public class OkHttpStack extends HurlStack {
     public HttpResponse performRequest(Request<?> request, Map<String, String> additionalHeaders) throws IOException, AuthFailureError {
 
 
+        //使用OkHttpClient
         OkHttpClient client = mOkHttpClient.newBuilder().connectTimeout(iTimeOutValue, TimeUnit.MILLISECONDS)
                 .readTimeout(iTimeOutValue, TimeUnit.MILLISECONDS)
                 .writeTimeout(iTimeOutValue, TimeUnit.MILLISECONDS).build();
